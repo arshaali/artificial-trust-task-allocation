@@ -38,7 +38,7 @@ set(gca,'FontSize',24);
 %legend('Location','South','Orientation','horizontal');
 xlabel('$\bar{\lambda}_1$','FontSize', 24,'interpreter','latex');
 ylabel('$\bar{\lambda}_2$','FontSize', 24,'interpreter','latex');
-title('Tsarouchi et al. [#]','FontSize', 24); %can change title to add (+0.1) if it is case II
+title('Tsarouchi et al.^9','FontSize', 24); %can change title to add (+0.1) if it is case II
 hold off;
 
 
@@ -59,7 +59,7 @@ set(gca,'FontSize',24);
 %legend;
 xlabel('$\bar{\lambda}_1$','FontSize', 24,'interpreter','latex');
 ylabel('$\bar{\lambda}_2$','FontSize', 24,'interpreter','latex');
-title('Tsarouchi et al. [#]','FontSize', 24); %can change title to add (+0.1) if it is case II
+title('Tsarouchi et al.^9','FontSize', 24); %can change title to add (+0.1) if it is case II
 hold off;
 
 team_perf = (size(human_successes,2) + size(robot_successes,2))/double(total_num_tasks);
