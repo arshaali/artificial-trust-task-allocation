@@ -1,3 +1,23 @@
+These Python scripts were used to generate tasks for allocation, run the task allocation methods, and organize and prepare the results for statistical testing and analysis.
+
+## Generate Tasks `generate_normaldist_tasks.py`
+
+This script will generate sets of N tasks for allocation. The following lines of code can be edited:
+* 13 number of iterations
+* 15 num tasks
+* 17 flag to save tasks
+* 21-30 human and robot capabilities
+* 38-39 sigma
+* 75 file name to save tasks to
+
+plot_normaldist_tasks.py
+8 num tasks
+11-18 human and robot capabilities
+27-28 sigma should be same as in generate_normaldist_tasks.py
+31 file to load tasks from
+
+
+
 atta_caseII.py ###explore etas in here
 Line 122 for \eta value
 Line 129 for number of iterations
@@ -98,20 +118,6 @@ generate_uniformdist_tasks.py
 13 num tasks
 15 flag to save tasks
 35 file name to save tasks to
-
-generate_normaldist_tasks.py
-13 number of iterations
-15 num tasks
-17 flag to save tasks
-21-30 human and robot capabilities
-38-39 sigma
-75 file name to save tasks to
-
-plot_normaldist_tasks.py
-8 num tasks
-11-18 human and robot capabilities
-27-28 sigma should be same as in generate_normaldist_tasks.py
-31 file to load tasks from
 
 
 significance_prep_caseI.py
