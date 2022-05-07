@@ -21,7 +21,7 @@ Other results on the number of successes and failures are in `other_data_caseII_
   * `dataprep_caseII_neg10.csv`
   * `dataprep_attaonly_caseII.csv`
 
-You can check that all variables are set to "ordinal" in the "variable view" tab.
+     You can check that all variables are set to "ordinal" in the "variable view" tab.
 
 2. To generate descriptives (median, mean, standard deviation, etc.), click on `Analyze > Descriptive Statistics > Explore`. Move the variables you want to generate descriptives for to the "Dependent List". To generate statistics only and no plots, move the radio button to "Statistics". Refer to `spss_explore.png` for what this should look like. Click "OK" to generate the descriptives. 
 This is what was done for `dataprep_attaonly_caseII.csv`. The SPSS output log is `data_attaonly_caseII.spv` and the web version is `data_attaonly_caseII.htm`.
