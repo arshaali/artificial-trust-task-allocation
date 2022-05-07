@@ -13,8 +13,8 @@ This script will plot the set of tasks for allocation in the capability hypercub
 
 This script will plot which agent was allocated which task and the outcomes of those allocations for the ATTA and Random task allocation methods. The following lines of code can be edited:
 * _12-15_ The .mat file with the allocations and outcomes to plot.
-* _38,57_ To change plot titles to match the task allocation method that is being plotted.
-* _34,35,54_ To see the plot legend, uncomment these lines. To hide the plot legend, comment these lines.
+* _38, 57_ To change plot titles to match the task allocation method that is being plotted.
+* _34, 35, 54_ To see the plot legend, uncomment these lines. To hide the plot legend, comment these lines.
 
 
 ## Plot Allocations and Outcomes of Tasks in the Capability Hypercube for Tsarouchi et al.'s Method `plot_allocations_outcomes_tsarouchi.m`
@@ -22,9 +22,9 @@ This script will plot which agent was allocated which task and the outcomes of t
 This script will plot which agent was allocated which task and the outcomes of those allocations for Tsarouchi et al.'s task allocation method. The following lines of code can be edited:
 * _12-14_ The .mat file with the allocations and outcomes to plot.
 * _15-16_ The offset used in Tsarouchi et al.'s method for each capability dimension. In case I, these lines should be set to 0.0. In case II, these lines are the offset used in the methods Tsarouchi et al. (+0.1) or Tsarouchi et al. (-0.1), either 0.1 or -0.1.
-* _41,62_ To change plot titles to match the task allocation method that is being plotted.
+* _41, 62_ To change plot titles to match the task allocation method that is being plotted.
 * _55_ In case II, uncomment this line to plot the inaccurately known human capabilities. Comment this line if plotting allocations and outcomes for case I.
-* _37,38,59_ To see the plot legend, uncomment these lines. To hide the plot legend, comment these lines.
+* _37, 38, 59_ To see the plot legend, uncomment these lines. To hide the plot legend, comment these lines.
 
 
 ## Plot Progression of Capabilities Belief Distribution `plot_capabilities_update.m`
