@@ -97,6 +97,6 @@ Paper figures are in .svg format in `paper/SVG figures` and in .pdf format in `p
 
 ## Misc
 
-There are other README.txt files in various directories that provide further information on how to use the code.
+There are other README files in various directories that provide further information on how to use the code.
 
 TO BE DONE: Upload LaTeX source files.
