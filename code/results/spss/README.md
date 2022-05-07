@@ -8,7 +8,7 @@ Other results on the number of successes and failures are in `other_data_caseI.c
 
 ## Case II Results and Statistical Testing
 
-The results for statistical testing from the ATTA and Tsarouchi et al. (+0.1) task allocation methods in case II are in `dataprep_caseII_pos10.csv`. The results for statistical testing from the ATTA and Tsarouchi et al. (-0.1) task allocation methods in case II are in `dataprep_caseII_neg10.csv`.Statistical testing was done on the metrics of team performance, human performance, robot performance, and team total reward. 
+The results for statistical testing from the ATTA and Tsarouchi et al. (+0.1) task allocation methods in case II are in `dataprep_caseII_pos10.csv`. The results for statistical testing from the ATTA and Tsarouchi et al. (-0.1) task allocation methods in case II are in `dataprep_caseII_neg10.csv`. Statistical testing was done on the metrics of team performance, human performance, robot performance, and team total reward. 
 
 More results from ATTA for case II, including covergence offsets, are in `dataprep_attaonly_caseII.csv`.
 
@@ -20,6 +20,7 @@ Other results on the number of successes and failures are in `other_data_caseII_
   * `dataprep_caseII_pos10.csv`
   * `dataprep_caseII_neg10.csv`
   * `dataprep_attaonly_caseII.csv`
+
 You can check that all variables are set to "ordinal" in the "variable view" tab.
 
 2. To generate descriptives (median, mean, standard deviation, etc.), click on `Analyze > Descriptive Statistics > Explore`. Move the variables you want to generate descriptives for to the "Dependent List". To generate statistics only and no plots, move the radio button to "Statistics". Refer to `spss_explore.png` for what this should look like. Click "OK" to generate the descriptives. 
