@@ -1,4 +1,4 @@
-These Python scripts were used to generate tasks for allocation, run the task allocation methods, and organize and prepare the results for statistical testing and analysis. Where lines of code can be edited, make sure they are consistent with the values used in the other scripts.
+These Python scripts were used to generate tasks for allocation, run the task allocation methods, and organize and prepare the results for statistical testing and analysis. Where lines of code can be edited, make sure they are consistent with the values used in the other scripts. All scripts are run from the `code` directory by typing `python <file name>.py` in the terminal.
 
 ## Generate Tasks `generate_normaldist_tasks.py`
 
