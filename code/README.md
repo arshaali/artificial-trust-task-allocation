@@ -26,95 +26,116 @@ In our paper, we plotted the tasks generated in `code/results/tasks/TA_normaldis
 
 ## Artificial Trust-Based Task Allocation (ATTA) Method Implementation `atta_caseI.py` and `atta_caseII.py`
 
-These scripts will run the ATTA method implementation for case I and case II. The following lines of code can be edited:
-atta_caseI.py
-Line 122 for \eta value
-Line 129 for number of iterations
-Line 141 num tasks
-175-178 human capabilities
-183-186 robot capabilities
-196 path to .mat tasks to allocate
-222 task reward
-224-225 human and robot cost
-237 alpha tolerance
-314 file name to save results to
+These scripts will run the ATTA method implementation for case I and case II. For ATTA in case I, the following lines of code can be edited:
+* _122_ The eta value for uncertainty in task outcomes.
+* _129_ The number of sets/iterations of N tasks to allocate.
+* _141_ The number of tasks N to allocate.
+* _175-178_ The human's capabilities.
+* _183-186_ The robot's capabilities.
+* _196_ The .mat file with tasks to allocate.
+* _222_ The task reward equation.
+* _224-225_ The human's and robot's cost equation.
+* _237_ The alpha tolerance for when expected total rewards should be considered approximately the same.
+* _314_ The file name to save the results of the task allocations and outcomes to.
 
-atta_caseII.py 
-Line 122 for \eta value
-Line 129 for number of iterations
-Line 141 learning rate
-Line 142 weight decay
-Line 146 loss tolerance to stop optimizer early
-Line 149 report period
-Line 163 nbins
-Line 184 num tasks
-220-223 human capabilities
-228-231 robot capabilities
-240 path to .mat tasks to allocate
-307 task reward
-309-310 human and robot cost
-332 alpha tolerance
-606 difference between current loss and loss 200 iterations ago at which to stop early
-621 file name to save results to
+For ATTA in case II, the following lines of code can be edited:
+* _122_ The eta value for uncertainty in task outcomes.
+* _129_ The number of sets/iterations of N tasks to allocate.
+* _141_ The learning rate of the Pytorch Adam optimizer.
+* _142_ The weight decay of the Pytorch Adam optimizer.
+* _146_ The loss tolerance to stop the optimizer early for when the loss is less than this value.
+* _149_ The report period for how often (number of optimizer iterations) to print lower and upper bounds and the loss to the terminal.
+* _163_ The number of bins nbins to discretize each capability dimension with. 
+* _184_ The number of tasks N to allocate.
+* _220-223_ The human's capabilities.
+* _228-231_ The robot's capabilities.
+* _240_ The .mat file with tasks to allocate.
+* _307_ The task reward equation.
+* _309-310_ The human's and robot's cost equation.
+* _332_ The alpha tolerance for when expected total rewards should be considered approximately the same.
+* _606_ When the difference between the current loss and loss report_period iterations ago falls within this value, the optimizer can stop early since the loss is not decreasing.
+* _621_ The file name to save the results of the task allocations and outcomes to.
 
 
 ## Random Method Implementation `random_caseI.py`
 
 These scripts will run the Random method implementation for case I (no difference in implementation for case II). The following lines of code can be edited:
-
-random_caseI.py
-19 for \eta value
-Line 26 for number of iterations
-Line 34 num tasks
-62-71 human and robot capabilities
-79 file to load tasks
-116 task reward
-118-119 human and robot cost
-152 file name to save results to
+* _19_ The eta value for uncertainty in task outcomes.
+* _26_ The number of sets/iterations of N tasks to allocate.
+* _34_ The number of tasks N to allocate.
+* _62-71_ The human's and robot's capabilities.
+* _79_ The .mat file with tasks to allocate.
+* _116_ The task reward equation.
+* _118-119_ The human's and robot's cost equation.
+* _152_ The file name to save the results of the task allocations and outcomes to.
 
 
 ## Tsarouchi et al.'s Method Implementation `tsarouchi_caseI.py` and `tsarouchi_caseII.py`
 
-These scripts will run the ATTA method implementation for case I and case II. The following lines of code can be edited:
+These scripts will run Tsarouchi et al.'s method implementation for case I and case II. For Tsarouchi et al.'s method in case I, the following lines of code can be edited:
+* _25_ The eta value for uncertainty in task outcomes.
+* _32_ The number of sets/iterations of N tasks to allocate.
+* _39_ The number of tasks N to allocate.
+* _73-82_ The human's and robot's capabilities.
+* _91_ The .mat file with tasks to allocate.
+* _109_ The task reward equation.
+* _111-112_ The human's and robot's cost equation.
+* _221_ The file name to save the results of the task allocations and outcomes to.
 
-`tsarouchi_caseI.py` CHECK THESE LINES
-25 eta
-Line 32 for number of iterations
-Line 39 num tasks
-67-76 human and robot capabilities
-83-84 inaccurate offset. This is 0 for case I. something else for case II.
-89 file to load tasks
-107 task reward
-109-110 human and robot cost
-197 file name to save results to
-
-
-
-significance_prep_caseI.py
-8 number of iterations
-16 atta_caseI data files
-38 tmmc_caseI data files
-59 random data files
-84 file name to save to
-
-significance_prep_caseII.py
-8 number of iterations
-16 atta_caseI data files
-38 tmmc_caseI data files
-62 file name to save to
+For Tsarouchi et al.'s method in case II, the following lines of code can be edited:
+* _25_ The eta value for uncertainty in task outcomes.
+* _32_ The number of sets/iterations of N tasks to allocate.
+* _39_ The number of tasks N to allocate.
+* _73-82_ The human's and robot's capabilities.
+* _89-90_ The inaccurate offset for the human's capabilities for each capability dimension.
+* _94_ The .mat file with tasks to allocate.
+* _112_ The task reward equation.
+* _114-115_ The human's and robot's cost equation.
+* _224_ The file name to save the results of the task allocations and outcomes to.
 
 
+## Prepare Case I Results for Significance Testing `significance_prep_caseI.py`
 
-explore_atta_results.py
-8 number of iterations
-16 atta_caseII files
-95 file name to save to
-Note: may have to change/remove some lines from 74-88 if the human was not allocated enough tasks for the calculation at that convergence offset
+This script will organize and prepare the results from the ATTA, Random, and Tsarouchi et al. methods from case I for signifiance testing. The metrics prepared are team performance, human performance, robot performance, team total reward, percentage of tasks allocated to the human, and percentage of tasks allocated to the robot. The first four metrics are compared for significance in SPSS. Please see the README in `code/results/spss` for more information of significance testing. The following lines of code can be edited:
+* _8_ The number of sets/iterations of N tasks to allocate.
+* _16_ The .mat files for the results from the ATTA method for case I.
+* _38_ The .mat files for the results from the Tsarouchi et al. method for case I.
+* _59_ The .mat files for the results from the Random method for case I.
+* _84_ The file name to save the prepared data and metrics to.
 
 
+## Prepare Case II Results for Significance Testing `significance_prep_caseII.py`
 
-#OBSERVATIONS/POINTS
-#obs_prob_idxs start at 0 and go to 9
-#how will it know what lower and upper bounds to converge to?
-#    answer: the calculation of the performance is not based on the trust estimate based on current lower and upper bounds.
-#        It is based on trust computed from the actual lower and upper bounds
+This script will organize and prepare the results from the ATTA and Tsarouchi et al. methods from case II for signifiance testing. The metrics prepared are team performance, human performance, robot performance, team total reward, percentage of tasks allocated to the human, and percentage of tasks allocated to the robot. The first four metrics are compared for significance in SPSS. Please see the README in `code/results/spss` for more information of significance testing. The following lines of code can be edited:
+* _8_ The number of sets/iterations of N tasks to allocate.
+* _16_ The .mat files for the results from the ATTA method for case II.
+* _38_ The .mat files for the results from the Tsarouchi et al. method for case II.
+* _63_ The file name to save the prepared data and metrics to.
+
+
+## Prepare ATTA Case II Results for SPSS Descriptives `explore_atta_results.py`
+
+This script will organize and prepare the results from the ATTA method from case II for computing descriptives (statistics like median, mean, standard deviation, etc.) in SPSS. The metrics prepared are team performance, human performance, robot performance, team total reward, percentage of tasks allocated to the human, percentage of tasks allocated to the robot, and convergence offset data for both capability dimensions. Convergence offset data for each capability dimension is included for 0, 5, 10, 20, 40, 80, and end k^H number of tasks. End is the last task number executed by the human. The following lines of code can be edited: 
+* _8_ The number of sets/iterations of N tasks to allocate.
+* _16_ The .mat files for the results from the ATTA method for case II.
+* _74-88_ Some lines for convergence offset may need to be altered or removed if the human was not allocated that many tasks.
+* _95_ The file name to save the prepared data and metrics to.
+
+
+## Prepare Other Case I Results for Analysis `other_data_caseI.py`
+
+This script will organize and prepare additional results from the ATTA, Random, and Tsarouchi et al. methods from case I for observation and analysis. Other data metrics prepared include the number of task successes, number of task failures, number of tasks allocated to each agent, number of tasks discarded and how many to each agent in Tsarouchi et al.'s method implementation, number of human task successes, number of human task failures, number of robot task successes, number of robot task failures, number of failed and discarded tasks attributed to the human in Tsarouchi et al.'s method implementation, and number of failed and discarded tasks attributed to the robot in Tsarouchi et al.'s method implementation. The following lines of code can be edited:
+* _8_ The number of sets/iterations of N tasks to allocate.
+* _16_ The .mat files for the results from the ATTA method for case I.
+* _37_ The .mat files for the results from the Tsarouchi et al. method for case I.
+* _64_ The .mat files for the results from the Random method for case I.
+* _102_ The file name to save the prepared data and metrics to.
+
+
+## Prepare Other Case II Results for Analysis `other_data_caseII.py`
+
+This script will organize and prepare additional results from the ATTA and Tsarouchi et al. methods from case II for observation and analysis. Other data metrics prepared include the number of task successes, number of task failures, number of tasks allocated to each agent, number of tasks discarded and how many to each agent in Tsarouchi et al.'s method implementation, number of human task successes, number of human task failures, number of robot task successes, number of robot task failures, number of failed and discarded tasks attributed to the human in Tsarouchi et al.'s method implementation, and number of failed and discarded tasks attributed to the robot in Tsarouchi et al.'s method implementation. The following lines of code can be edited:
+* _8_ The number of sets/iterations of N tasks to allocate.
+* _16_ The .mat files for the results from the ATTA method for case II.
+* _37_ The .mat files for the results from the Tsarouchi et al. method for case II.
+* _80_ The file name to save the prepared data and metrics to.
