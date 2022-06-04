@@ -130,7 +130,7 @@ num_iter = 10 #run the strategy 10 times
 
 if __name__ == "__main__":
 
-    for iter in range(8, num_iter, 1):
+    for iter in range(0, num_iter, 1):
     
         model = RobotTrustModel() #create a RobotTrustModel object
 
