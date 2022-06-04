@@ -124,18 +124,22 @@ This script will organize and prepare the results from the ATTA method from case
 
 ## Prepare Other Case I Results for Analysis `other_data_caseI.py`
 
-This script will organize and prepare additional results from the ATTA, Random, and Tsarouchi et al. methods from case I for observation and analysis. Other data metrics prepared include the number of task successes, number of task failures, number of tasks allocated to each agent, number of tasks discarded and how many to each agent in Tsarouchi et al.'s method implementation, number of human task successes, number of human task failures, number of robot task successes, number of robot task failures, number of failed and discarded tasks attributed to the human in Tsarouchi et al.'s method implementation, and number of failed and discarded tasks attributed to the robot in Tsarouchi et al.'s method implementation. The following lines of code can be edited:
+This script will organize and prepare additional results from the ATTA, Random, and Tsarouchi et al. methods from case I for observation and analysis. Other data metrics prepared include the number of task successes, number of task failures, number of tasks allocated to each agent, number of tasks discarded and how many to each agent in Tsarouchi et al.'s method implementation, number of human task successes, number of human task failures, number of robot task successes, number of robot task failures, number of failed and discarded tasks attributed to the human in Tsarouchi et al.'s method implementation, number of failed and discarded tasks attributed to the robot in Tsarouchi et al.'s method implementation, and the cost of human and robot failures. The following lines of code can be edited:
 * _8_ The number of sets/iterations of N tasks to allocate.
-* _16_ The .mat files for the results from the ATTA method for case I.
-* _37_ The .mat files for the results from the Tsarouchi et al. method for case I.
-* _64_ The .mat files for the results from the Random method for case I.
-* _102_ The file name to save the prepared data and metrics to.
+* _23_ The .mat files for the results from the ATTA method for case I.
+* _52_ The .mat files for the results from the Tsarouchi et al. method for case I.
+* _95_ The .mat files for the results from the Random method for case I.
+* _45, 80, 83, 117_ The human cost equation.
+* _49, 88, 91, 121_ The robot cost equation.
+* _142_ The file name to save the prepared data and metrics to.
 
 
 ## Prepare Other Case II Results for Analysis `other_data_caseII.py`
 
-This script will organize and prepare additional results from the ATTA and Tsarouchi et al. methods from case II for observation and analysis. Other data metrics prepared include the number of task successes, number of task failures, number of tasks allocated to each agent, number of tasks discarded and how many to each agent in Tsarouchi et al.'s method implementation, number of human task successes, number of human task failures, number of robot task successes, number of robot task failures, number of failed and discarded tasks attributed to the human in Tsarouchi et al.'s method implementation, and number of failed and discarded tasks attributed to the robot in Tsarouchi et al.'s method implementation. The following lines of code can be edited:
+This script will organize and prepare additional results from the ATTA and Tsarouchi et al. methods from case II for observation and analysis. Other data metrics prepared include the number of task successes, number of task failures, number of tasks allocated to each agent, number of tasks discarded and how many to each agent in Tsarouchi et al.'s method implementation, number of human task successes, number of human task failures, number of robot task successes, number of robot task failures, number of failed and discarded tasks attributed to the human in Tsarouchi et al.'s method implementation, number of failed and discarded tasks attributed to the robot in Tsarouchi et al.'s method implementation, and the cost of human and robot failures. The following lines of code can be edited:
 * _8_ The number of sets/iterations of N tasks to allocate.
-* _16_ The .mat files for the results from the ATTA method for case II.
-* _37_ The .mat files for the results from the Tsarouchi et al. method for case II.
-* _80_ The file name to save the prepared data and metrics to.
+* _22_ The .mat files for the results from the ATTA method for case II.
+* _51_ The .mat files for the results from the Tsarouchi et al. method for case II.
+* _44, 79, 82_ The human cost equation.
+* _48, 87, 90_ The robot cost equation.
+* _111_ The file name to save the prepared data and metrics to.
