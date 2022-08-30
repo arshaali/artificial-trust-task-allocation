@@ -21,7 +21,7 @@ This script will plot the distribution for each capability dimension from which 
 * _27-28_ The standard deviation (sigma) for each capability dimension distribution from which task requirements for that dimension will be sampled from.
 * _31_ The file name to load generated tasks from. This should match the file name saved to in line _75_ when generating the tasks. 
 
-In our paper, we plotted the tasks generated in `code/results/tasks/TA_normaldist_tasks_3.mat`.
+In our paper, we plotted the tasks generated in `code/results/tasks/TA_normaldist_tasks_3.mat` as Supplementary Figure S1.
 
 
 ## Artificial Trust-Based Task Allocation (ATTA) Method Implementation `atta_caseI.py` and `atta_caseII.py`
