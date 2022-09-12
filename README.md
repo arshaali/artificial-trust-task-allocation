@@ -1,6 +1,6 @@
 # Artificial Trust-Based Task Allocation (ATTA)
 
-Dataset and software for the paper "Heterogeneous Human-Robot Task Allocation Based on Artificial Trust".
+Dataset and software for the paper "Heterogeneous human–robot task allocation based on artificial trust. Sci Rep 12, 15304." (Ali, A., Azevedo-Sa, H., Tilbury, D.M., & Robert Jr., L.P., 2022). DOI: https://doi.org/10.1038/s41598-022-19140-5.
 
 ## Dataset
 
@@ -98,5 +98,3 @@ Paper figures are in .svg format in `paper/SVG figures` and in .pdf format in `p
 ## Misc
 
 There are other README files in various directories that provide further information on how to use the code.
-
-TO BE DONE: Upload LaTeX source files, final figures, provide DOI and correct citation to article.
